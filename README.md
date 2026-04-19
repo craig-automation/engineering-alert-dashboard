@@ -2,6 +2,10 @@
 
 A Streamlit-based dashboard for monitoring engineering incidents and identifying high-risk assets.
 
+## Dashboard Preview
+
+![Dashboard Screenshot](./dashboard.png)
+
 ## Overview
 
 This project is an engineering dashboard that monitors asset incidents and identifies high-risk issues.
