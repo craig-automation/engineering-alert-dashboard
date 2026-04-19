@@ -2,7 +2,7 @@
 
 ## 🚀 Live App
 
-👉 https://engineering-alert-dashboard-pnqbffio69hkiqr8swfet7.streamlit.app
+👉 👉 [Open Live Dashboard](https://engineering-alert-dashboard-pnqbffio69hkiqr8swfet7.streamlit.app)
 
 ---
 
