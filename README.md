@@ -1,53 +1,93 @@
 # Engineering Alert Dashboard
 
-## 🚀 Live App
+A Streamlit-based dashboard for monitoring engineering incidents and identifying high-risk assets.
 
-👉 👉 [Open Live Dashboard](https://engineering-alert-dashboard-pnqbffio69hkiqr8swfet7.streamlit.app)
+## Overview
 
----
+This project is an engineering dashboard that monitors asset incidents and identifies high-risk issues.
 
-## 📊 Dashboard Preview
+It combines:
+- Asset data (loaded from an external API)
+- Simulated incident data
+- Alert logic and risk scoring
 
-![Dashboard Screenshot](./dashboard.png)
-
----
-
-## 📌 Overview
-
-This project is a **Streamlit-based engineering dashboard** designed to monitor asset incidents and identify high-risk issues in real time.
-
-It integrates asset and incident data to support **data-driven engineering decisions**, highlight critical faults, and prioritise maintenance actions.
+The goal is to support engineering decision-making by highlighting critical problems and prioritising assets.
 
 ---
 
-## ⚙️ Features
+## Features
 
-- 📊 Incident Monitoring Dashboard  
-- ⚠️ Critical Alert Detection (high severity + repeat issues)  
-- 📈 Asset Risk Scoring & Ranking  
-- 🔍 Filtering by Site and Severity  
-- 🗺️ Incident Visualisation by Site  
-- 🔄 Simulated Incident Data Generation  
-
----
-
-## 🧠 How It Works
-
-1. Asset data is loaded (simulated or via API)  
-2. Incident data is generated or ingested  
-3. Data is merged and analysed  
-4. Risk scoring logic identifies high-risk assets  
-5. Dashboard updates dynamically based on filters  
+- 📊 Incident monitoring dashboard  
+- ⚠️ Critical alert detection (high severity + repeat issues)  
+- 📈 Asset risk scoring and ranking  
+- 🔍 Filtering by site and severity  
+- 📉 Visualisation of incidents by site  
 
 ---
 
-## 🛠️ Tech Stack
+## How It Works
 
-- Python  
-- Streamlit  
-- Pandas  
-- Requests (for API integration)  
+1. Asset data is loaded from an external API  
+2. Incident data is generated randomly  
+3. Data is merged and filtered  
+4. Alerts are calculated based on severity and repeat issues  
+5. Risk scores are calculated per asset  
+6. The dashboard displays insights and rankings  
 
 ---
 
-## 📂 Project Structure
+## Example Output
+
+- Critical alerts when high-risk issues are detected  
+- Ranked list of assets by risk score  
+- Identification of the highest-risk asset  
+
+---
+
+## How to Run
+
+1. Navigate to the project folder:
+```bash
+cd engineering_alert_dashboard
+```
+
+2. Activate virtual environment:
+```bash
+source ../venv/bin/activate
+```
+
+3. Install requirements:
+```bash
+pip install -r requirements.txt
+```
+
+4. Run the app:
+```bash
+streamlit run app.py
+```
+
+## Requirements
+
+- streamlit
+- pandas
+- requests
+
+---
+
+## Notes
+
+This is a learning project demonstrating:
+
+- data integration
+- dashboard design
+- alert logic
+- risk-based decision support
+
+---
+
+## Future Improvements
+
+- Add persistent data storage
+- Improve alert rules
+- Add more visualisations
+- Integrate AI for diagnostics
