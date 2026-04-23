@@ -2,16 +2,19 @@
 
 A Streamlit-based dashboard for monitoring engineering incidents and identifying high-risk assets.
 
+---
+
 ## Overview
 
-This project is an engineering dashboard that monitors asset incidents and identifies high-risk issues.
+This project is an engineering dashboard designed to monitor asset incidents and identify high-risk operational issues.
 
 It combines:
+
 - Asset data (loaded from an external API)
 - Simulated incident data
 - Alert logic and risk scoring
 
-The goal is to support engineering decision-making by highlighting critical problems and prioritising assets.
+The goal is to support engineering decision-making by highlighting critical problems and enabling prioritisation of maintenance actions.
 
 ---
 
@@ -28,7 +31,7 @@ The goal is to support engineering decision-making by highlighting critical prob
 ## How It Works
 
 1. Asset data is loaded from an external API  
-2. Incident data is generated randomly  
+2. Incident data is generated or ingested  
 3. Data is merged and filtered  
 4. Alerts are calculated based on severity and repeat issues  
 5. Risk scores are calculated per asset  
@@ -51,7 +54,7 @@ The goal is to support engineering decision-making by highlighting critical prob
 cd engineering_alert_dashboard
 ```
 
-2. Activate virtual environment:
+2. Activate virtual environment
 ```bash
 source ../venv/bin/activate
 ```
@@ -66,26 +69,26 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-## Requirements
+Requirements
 
-- streamlit
-- pandas
-- requests
+* streamlit
+* pandas
+* requests
 
----
+⸻
 
-## Notes
+Notes
 
 This is a learning project demonstrating:
 
-- data integration
-- dashboard design
-- alert logic
-- risk-based decision support
+- Data integration
+- Dashboard design
+- Alert logic
+- Risk-based decision support
 
----
+⸻
 
-## Future Improvements
+Future Improvements
 
 - Add persistent data storage
 - Improve alert rules
