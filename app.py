@@ -103,6 +103,11 @@ merged = incidents.merge(assets, on="asset_id", how="left")
 
 st.sidebar.header("Filters")
 
+mode = st.sidebar.radio(
+    "Data Mode",
+    ["Manual", "Auto (refresh every run)"]
+)
+
 selected_site = st.sidebar.selectbox(
     "Select Site",
     options=["All"] + list(assets["site"].unique())
@@ -113,7 +118,11 @@ selected_severity = st.sidebar.selectbox(
     options=["All"] + list(incidents["severity"].unique())
 )
 
-if st.sidebar.button("Generate New Incident Data"):
+if mode == "Manual":
+    if st.sidebar.button("Generate New Incident Data"):
+        st.session_state["incidents"] = generate_incidents(assets)
+
+elif mode == "Auto (refresh every run)":
     st.session_state["incidents"] = generate_incidents(assets)
 
 
